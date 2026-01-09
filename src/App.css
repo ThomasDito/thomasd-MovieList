@@ -1,0 +1,87 @@
+/* .App {
+  text-align: center;
+}
+
+.App-container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.Movie-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  background-color: #222b3d;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 5px 20px grey;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  width: 475px;
+}
+
+.Movie-image img {
+  width: 300px;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.descCard {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.Movie-title {
+  font-weight: bold;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+}
+
+.Movie-rate {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 10px;
+} */

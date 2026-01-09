@@ -1,0 +1,132 @@
+.App {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #151515;
+    color: white;
+}
+
+.pageInfo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem 0 0 7.5rem;
+    font-size: 70%;
+}
+
+.pageInfo h1 {
+    background-image: linear-gradient(90deg, rgb(126, 123, 255) 0%, rgb(188, 187, 255) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.AppContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.MovieContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(4, 20%); */
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 50px;
+}
+
+.MovieWrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15rem;
+    /*width: 300px;
+    */
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.MovieWrapper:hover {
+    width: 17rem;
+    box-shadow: 0 0 20px aliceblue;
+}
+
+.MovieImage img {
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.MovieImage img:hover {
+    width: 17rem;
+}
+
+.MovieSearch {
+    background-color: #151515;
+    color: aliceblue;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem;
+    width: 40rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.MovieSearch:hover {
+    border-color: aliceblue;
+}
+
+
+.descCard {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.MovieTitle {
+    font-weight: bold;
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.MovieRate {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}

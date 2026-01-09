@@ -1,0 +1,6 @@
+.logo h1 {
+    background-image: linear-gradient(90deg, rgb(188, 187, 255) 0%, rgb(87, 85, 255)  100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
