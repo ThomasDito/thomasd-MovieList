@@ -73,10 +73,10 @@ const Footer = ({ homeScroll }) => {
                             <h2 className="mb-6 text-base font-semibold text-heading uppercase">Legal</h2>
                             <ul className="text-body font-medium">
                                 <li className="mb-4">
-                                    <a href="#" className="text-red-700 hover:opacity-70 hover:underline">Privacy Policy</a>
+                                    <a href="https://www.themoviedb.org/privacy-policy" target='_blank' rel='noopener noreferrer' className="text-red-700 hover:opacity-70 hover:underline">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-red-700 hover:opacity-70 hover:underline">Terms &amp; Conditions</a>
+                                    <a href="https://www.themoviedb.org/api-terms-of-use" target='_blank' rel='noopener noreferrer' className="text-red-700 hover:opacity-70 hover:underline">Terms &amp; Conditions</a>
                                 </li>
                             </ul>
                         </div>
