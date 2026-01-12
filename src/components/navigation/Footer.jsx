@@ -12,13 +12,13 @@ const Footer = ({ homeScroll }) => {
         <footer className="mt-12 bg-neutral-primary-soft">
             <div className="mx-auto w-full p-4 py-2">
                 <hr className="my-6 border-zinc-600 sm:mx-auto lg:my-8" />
-                <div className="lg:flex lg:justify-between px-4">
+                <div className="lg:flex lg:justify-between px-4 gap-2">
                     <div className="mb-6 lg:mb-0 hidden lg:flex lg:flex-col items-start gap-2">
                         <div className="logo">
                             <h1 className='text-5xl font-bold cursor-pointer' onClick={() => navigate('/')}>MovieList</h1>
                         </div>
                         <h2 className='max-w-prose text-sm font-light opacity-60'>
-                            IDLIX adalah platform streaming film, series, anime, drakor subtitle indonesia nomor 1 di Indonesia dan menyediakan kualitas terbaik yang ada dipasaran Indonesia secara gratis dan didukung oleh server yang mumpuni, namun tidak seperti platform streaming lainnya, IDLIX ingin menyediakan layanan nonton film dengan kualitas bagus dan tidak ada bayaran apapun untuk menikmati film atau series yang ada disitus IDLIX ini, karena tidak semua wilayah di Indonesia memiliki bioskop untuk menonton film-film terbaru.
+                            MovieList is a movie catalog website that provides a curated listing of films from around the world, ranging from local productions to international releases. The website features multiple movie categories such as now playing, trending, popular, top rated, and upcoming. Each movie is presented in a card format containing its poster, title, release year, and rating. MovieList also offers a detailed movie page that displays comprehensive information including synopsis, genres, director, cast, and other relevant details, allowing users to easily explore and discover movies of interest.
                         </h2>
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-10">
@@ -86,7 +86,8 @@ const Footer = ({ homeScroll }) => {
                             <h1 className='text-5xl font-bold cursor-pointer'>MovieList</h1>
                         </div>
                         <h2 className='max-w-prose text-sm font-light opacity-60'>
-                            IDLIX adalah platform streaming film, series, anime, drakor subtitle indonesia nomor 1 di Indonesia dan menyediakan kualitas terbaik yang ada dipasaran Indonesia secara gratis dan didukung oleh server yang mumpuni, namun tidak seperti platform streaming lainnya, IDLIX ingin menyediakan layanan nonton film dengan kualitas bagus dan tidak ada bayaran apapun untuk menikmati film atau series yang ada disitus IDLIX ini, karena tidak semua wilayah di Indonesia memiliki bioskop untuk menonton film-film terbaru.
+                            {/* MovieList adalah sebuah website katalog film yang menyediakan daftar film dari berbagai belahan dunia, mulai dari film lokal hingga internasional. Website ini menyajikan berbagai segmen film seperti now playing, trending, popular, top rated, hingga film yang akan segera dirilis. Setiap film ditampilkan dalam bentuk kartu yang memuat poster, judul, tahun rilis, dan rating. Selain itu, MovieList juga menyediakan halaman detail film yang menampilkan informasi lengkap seperti deskripsi, genre, sutradara, pemeran, dan detail penting lainnya, sehingga pengguna dapat dengan mudah menemukan dan mengenal film yang ingin mereka tonton. */}
+                            MovieList is a movie catalog website that provides a curated listing of films from around the world, ranging from local productions to international releases. The website features multiple movie categories such as now playing, trending, popular, top rated, and upcoming. Each movie is presented in a card format containing its poster, title, release year, and rating. MovieList also offers a detailed movie page that displays comprehensive information including synopsis, genres, director, cast, and other relevant details, allowing users to easily explore and discover movies of interest.
                         </h2>
                     </div>
                 </div>
@@ -109,7 +110,7 @@ const Footer = ({ homeScroll }) => {
                         <a 
                         href="#" rel="noopener noreferrer" aria-label='Telegram'
                         className='transition-transform duration-300 ease-in-out hover:scale-135'
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(event) => event.preventDefault()}
                         >
                             <i className="ri-telegram-2-fill text-3xl"></i>
                         </a>
@@ -127,13 +128,13 @@ const Footer = ({ homeScroll }) => {
                         <a href="#" rel="noopener noreferrer" aria-label='Discord' className='transition-transform duration-300 ease-in-out hover:scale-135' onClick={(e) => e.preventDefault()}>
                             <i className="ri-discord-fill text-3xl lg:text-2xl"></i>
                         </a>
-                        <a href="#" rel="noopener noreferrer" aria-label='Instagram' className='transition-transform duration-300 ease-in-out hover:scale-135' onClick={(e) => e.preventDefault()}>
+                        <a href="#" rel="noopener noreferrer" aria-label='Instagram' className='transition-transform duration-300 ease-in-out hover:scale-135' onClick={(event) => event.preventDefault()}>
                             <i className="ri-instagram-line text-3xl lg:text-2xl"></i>
                         </a>
                         <a 
                         href="#" rel="noopener noreferrer" aria-label='Telegram'
                         className='transition-transform duration-300 ease-in-out hover:scale-135'
-                        onClick={(e) => e.preventDefault()}
+                        onClick={(event) => event.preventDefault()}
                         >
                             <i className="ri-telegram-2-fill text-3xl lg:text-2xl"></i>
                         </a>
