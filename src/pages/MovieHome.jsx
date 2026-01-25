@@ -44,8 +44,9 @@ const MovieHome = () => {
                 setTotalPages(data.total_pages);
 
                 goto(homeRef.current); // biar tiap pindah page balik ke atas
-            } catch (e) {
-                setError("Gagal mengambil data film.");
+            } catch (err) {
+                setError(`Gagal mengambil data film. Status: ${err.message}`);
+                goto(homeRef.current);
             } finally {
                 setLoading(false);
             }
@@ -59,7 +60,7 @@ const MovieHome = () => {
         return stateMovies.map((movie, i) => {
             return (
                 <div
-                className="movie-wrapper group mx-auto max-w-11/12 w-80 sm:w-60 rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out sm:hover:scale-110 hover:bg-zinc-900"
+                className="movie-wrapper group mx-auto max-w-11/12 w-80 sm:w-60 rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out sm:hover:scale-110 hover:bg-zinc-900 hover:shadow-[0_0_20px_aliceblue]"
                 key={movie.id}
                 >
                     <div className="block aspect-9/13 w-full overflow-hidden bg-zinc-700 rounded-3xl">

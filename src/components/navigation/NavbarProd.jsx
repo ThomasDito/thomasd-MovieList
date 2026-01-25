@@ -22,11 +22,10 @@ const NavbarProd = () => {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
                 const goingDown = currentY > lastY;
-                const scrollTrue = goingDown
 
                 // opsional: jangan ngilang saat masih dekat atas
                 if (currentY < 80) setShow(true);
-                else setShow(!scrollTrue);
+                else setShow(!goingDown);
 
                 lastY = currentY;
                 ticking = false;
