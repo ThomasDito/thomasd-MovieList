@@ -119,21 +119,32 @@ const NavbarProd = () => {
                                 )
                             }
                             >
-                                <Link to={item.Link}
+                                <NavLink to={item.Link}
                                     key={item.name}
                                     aria-current={item.current ? 'page' : undefined}
-                                    className="block rounded-md px-3 py-2 text-base/loose font-semibold transition-colors ease-in-out duration-100 hover:text-red-600"
+                                    className={({ isActive }) => 
+                                        classNames(
+                                            isActive ? "bg-white/5 text-red-600 text-base/loose font-semibold" : "", "block rounded-md px-3 py-2 text-base/loose font-semibold transition-colors ease-in-out duration-100 hover:text-red-600"
+                                        )
+                                    }
                                 >
                                     {item.name}
-                                </Link>
+                                </NavLink>
                         </DisclosureButton>
                     ))}
                     <div className='block sm:hidden'>
-                        <Link to={'/search'}>
-                            <li className='block w-full text-center rounded-md px-3 py-2 text-base/loose font-semibold transition-colors duration-100 ease-in-out hover:text-red-600 hover:bg-white/5'>
+                        <NavLink 
+                            to={'/search'}
+                            className={({ isActive }) => 
+                                classNames(
+                                    isActive ? "bg-white/5 text-red-600" : "hover:bg-white/5", "block w-full text-center rounded-md px-3 py-2 transition-colors duration-100 ease-in-out hover:text-red-600"
+                                )
+                            }
+                        >
+                            <li className='block text-base/loose font-semibold'>
                                 Search <span><i className="ri-search-line"></i></span>
                             </li>
-                        </Link>
+                        </NavLink>
                     </div>
                 </div>
             </DisclosurePanel>

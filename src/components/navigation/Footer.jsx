@@ -83,7 +83,7 @@ const Footer = ({ homeScroll }) => {
                     </div>
                     <div className="flex flex-col items-start lg:hidden gap-2 mt-6">
                         <div className="logo">
-                            <h1 className='text-5xl font-bold cursor-pointer'>MovieList</h1>
+                            <h1 className='text-5xl font-bold cursor-pointer' onClick={() => navigate('/')}>MovieList</h1>
                         </div>
                         <h2 className='max-w-prose text-sm font-light opacity-60'>
                             {/* MovieList adalah sebuah website katalog film yang menyediakan daftar film dari berbagai belahan dunia, mulai dari film lokal hingga internasional. Website ini menyajikan berbagai segmen film seperti now playing, trending, popular, top rated, hingga film yang akan segera dirilis. Setiap film ditampilkan dalam bentuk kartu yang memuat poster, judul, tahun rilis, dan rating. Selain itu, MovieList juga menyediakan halaman detail film yang menampilkan informasi lengkap seperti deskripsi, genre, sutradara, pemeran, dan detail penting lainnya, sehingga pengguna dapat dengan mudah menemukan dan mengenal film yang ingin mereka tonton. */}
